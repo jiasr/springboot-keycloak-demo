@@ -1,4 +1,4 @@
-package cn.xdevops.demo;
+package cn.xdevops.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

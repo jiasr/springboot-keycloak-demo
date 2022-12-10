@@ -4,19 +4,19 @@ keycloak:
   # the client-id of the application, required
   resource: springboot-keycloak-demo
   # the base URL of the Keycloak server, required
-  auth-server-url: http://localhost:8180/auth
+  auth-server-url: https://jiasirui.xyz/auth
   # establishes if communications with the Keycloak server must happen over HTTPS
   # set to external, meaning that it's only needed for external requests (default value)
   # In production, instead, we should set it to all. Optional
-  ssl-required: external
+  ssl-required: all
   # prevents the application from sending credentials to the Keycloak server (false is the default value)
   # set it to true whenever we use public clients instead of confidential
   # when access type in keycloak is `confidential` must set `public-client: false`
-  public-client: false
+  public-client: true
   # client secret: client id and secret
   # https://www.keycloak.org/docs/latest/securing_apps/index.html#_client_authentication_adapter
-  credentials:
-    secret: "1804cd92-b659-4d0e-9bac-c25aac2c9981"
+  #credentials:
+  #  secret: "1804cd92-b659-4d0e-9bac-c25aac2c9981"
   # the attribute with which to populate the UserPrincipal name
   principal-attribute: preferred_username
 

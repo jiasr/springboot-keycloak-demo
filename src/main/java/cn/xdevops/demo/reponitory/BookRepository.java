@@ -1,5 +1,6 @@
-package cn.xdevops.demo;
+package cn.xdevops.demo.reponitory;
 
+import cn.xdevops.demo.model.Book;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
 public class BookRepository {
+
     private static Map<String, Book> books = new ConcurrentHashMap<>();
 
     static {

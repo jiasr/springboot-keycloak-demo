@@ -1,4 +1,4 @@
-package cn.xdevops.demo;
+package cn.xdevops.demo.utils;
 
 import org.keycloak.KeycloakSecurityContext;
 import org.keycloak.representations.IDToken;
